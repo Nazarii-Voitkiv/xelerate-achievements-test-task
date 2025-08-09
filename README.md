@@ -23,18 +23,12 @@ This project implements the "Achievements" module as part of a test assignment, 
 
 To get this project up and running on your local machine, follow these steps:
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <repository-url>
-    cd xelerate-achievements
-    ```
-
-2.  **Install dependencies:**
+1.  **Install dependencies:**
     ```bash
     npm install
     ```
 
-3.  **Run the development server:**
+2.  **Run the development server:**
     ```bash
     npm run dev
     ```
@@ -68,8 +62,3 @@ Key directories and files:
 -   `middleware.ts`: Next.js middleware for handling locale redirects and rewrites.
 -   `next.config.ts`: Next.js configuration file.
 -   `eslint.config.mjs`: ESLint configuration for code quality.
-
-## Figma Design
-
-Refer to the Figma design for visual specifications:
-[Figma Link](https://www.figma.com/design/kwDy4mSo3vnqgSncq0OQMe/XELERATE-Test-Front-End?node-id=0-1&t=j7stwg8TUQsvI9kQ-1)
