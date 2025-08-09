@@ -1,0 +1,436 @@
+@use '@/styles/variables.scss' as *;
+.achievementsRanksDropdown {
+  margin-top: 0;
+  background: rgba(37, 37, 37, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  padding: 12px 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.achievementsRanksDropdown {
+  margin-top: 12px;
+  background: rgba(37, 37, 37, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  padding: 12px 0;
+  min-width: 180px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.achievementsRankRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.achievementsBottomColDivider {
+  width: 0;
+  height: 64px;
+  border-left: 1px solid rgba(255, 255, 255, 1);
+  opacity: 0.05;
+  align-self: center;
+}
+.achievementsBottomFooter {
+  position: relative;
+}
+
+.achievementsContainer {
+  width: 100%;
+  min-height: 395px;
+  border-radius: 24px;
+  border: 1px solid rgba(101, 101, 101, 0.5);
+  padding: 24px;
+  background: rgba(37, 37, 37, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievementsContainerBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 421px;
+  height: 135px;
+  background: linear-gradient(294.25deg, rgba(185, 135, 86, 0.27) 1.06%, rgba(83, 61, 39, 0) 80.88%);
+  filter: blur(27px);
+  border-radius: 24px;
+  pointer-events: none;
+  z-index: 0;
+  transform: rotate(180deg);
+}
+
+.achievementsHeaderBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.achievementsTitle {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: $secondary-color;
+  margin: 0;
+}
+
+.achievementsSubtitle {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: rgba(167, 167, 167, 1);
+  margin: 0;
+}
+
+.achievementsContentBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.achievementsInnerBlock {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  background: rgba(37, 37, 37, 0.6);
+  box-sizing: border-box;
+  z-index: 0;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(98, 98, 98, 0.15) 0%, rgba(98, 98, 98, 0) 50%, rgba(98, 98, 98, 0.15) 100%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.achievementsInnerContent {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  border: 0.5px solid rgba(101, 101, 101, 0.5);
+  gap: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(37, 37, 37, 0.6);
+  box-sizing: border-box;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  overflow: hidden;
+}
+
+.achievementsInnerContentMain {
+  flex: 0 0 50%;
+  min-width: 0;
+}
+
+.achievementsInnerContentSecondary {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.achievementsInnerBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 161px;
+  height: 100%;
+  background: linear-gradient(294.25deg, rgba(185, 135, 86, 0.27) 1.06%, rgba(83, 61, 39, 0) 80.88%);
+  filter: blur(27px);
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.achievementsInnerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.achievementsHeaderTitle {
+  flex: 1 1 auto;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: rgba(167, 167, 167, 1);
+  vertical-align: middle;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsHeaderCount {
+  flex-shrink: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: rgba(167, 167, 167, 1);
+  vertical-align: middle;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsHeaderCountValue {
+  color: $secondary-color;
+  font-weight: 400;
+}
+
+.achievementsHeaderCountSeparator {
+  color: rgba(167, 167, 167, 1);
+  font-weight: 400;
+}
+
+.achievementsProgressBar {
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(101, 101, 101, 0.5);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(69, 69, 69, 0.5);
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.achievementsProgressBarDone {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(270deg, #D5BA94 0%, #B98756 50%, #534434 100%);
+}
+
+.achievementsProgressBarRemaining {
+  height: 100%;
+  border-radius: 4px;
+  background: rgba(83, 83, 83, 1);
+}
+
+.achievementsSecondaryValue {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: $secondary-color;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsSecondaryLabel {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: rgba(167, 167, 167, 1);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsBottomBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  opacity: 1;
+}
+
+.achievementsBottomInner {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid rgba(37, 37, 37, 0.6);
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  background: rgba(37, 37, 37, 0.6);
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.achievementsBottomCol {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  transition: border-color 0.2s;
+
+  &.selected {
+    border-color: rgba(197, 164, 132, 0.5);
+
+    .achievementsBottomRowLabel {
+      color: $secondary-color;
+    }
+  }
+}
+
+.achievementsBottomColLabel {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-variant-numeric: lining-nums proportional-nums;
+  color: rgba(175, 141, 108, 1);
+}
+
+.achievementsBottomRowInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.achievementsBottomRowLabel {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: rgba(167, 167, 167, 1);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsBottomRowValue {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: rgba(83, 83, 83, 1);
+  text-align: right;
+  vertical-align: middle;
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.achievementsBottomFooter {
+  border-radius: 16px;
+  border: 1px solid rgba(37, 37, 37, 0.6);
+  opacity: 1;
+  background: rgba(37, 37, 37, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  padding: 0 24px;
+}
+
+.achievementsBottomFooterRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+@media (max-width: #{$desktop-width - 1px}) and (min-width: #{$tablet-width}) {
+  .achievementsInnerBlock {
+    flex-wrap: wrap;
+  }
+
+  .achievementsInnerContentMain {
+    flex-basis: 100%;
+  }
+
+  .achievementsBottomBlock {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: #{$tablet-width - 1px}) {
+  .achievementsInnerBlock {
+    flex-wrap: wrap;
+  }
+
+  .achievementsInnerContentMain {
+    flex-basis: 100%;
+  }
+
+  .achievementsInnerContentSecondary {
+    flex-basis: calc(50% - 4px);
+  }
+
+  .achievementsBottomBlock {
+    flex-direction: column;
+  }
+
+  .achievementsBottomInner {
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .achievementsBottomCol {
+    min-width: 200px;
+  }
+}

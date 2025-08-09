@@ -1,0 +1,76 @@
+export const translations = {
+  ua: {
+    achievements: {
+      title: 'Досягнення',
+      unlocked: 'Відкрито',
+      progress: 'Прогрес',
+      subtitle: 'Ви крутіші, ніж {{percentage}}% спеціалістів!',
+      rank1Unlocked: 'Досягнень відкрито 1 рангу',
+      rank2Unlocked: 'Досягнень відкрито 2 рангу',
+      rank3Unlocked: 'Досягнень відкрито 3 рангу',
+      locked: 'Досягнення закрито',
+      allAchievements: 'Всі досягнення',
+      platformAchievements: 'Досягнення на платформі',
+      specialistAchievements: 'Досягнення спеціаліста',
+      allRanks: 'ВСІ РАНГИ',
+      rank1: '1 ранг',
+      rank2: '2 ранг',
+      rank3: '3 ранг',
+      closed: 'Закрито',
+    },
+    platformSection: {
+      title: 'Досягнення на платформі',
+    },
+    specialistSection: {
+      title: 'Досягнення спеціаліста',
+    },
+    achievementCard: {
+      label: 'Досягнення',
+    },
+    achievementsData: {
+      documentalistTitle: 'Документаліст',
+      authorArticlesTitle: 'Автор статей',
+      introductionTitle: 'Знайомство',
+      documentalistDesc: 'Додано 30 полезных документов.',
+      achievementDesc: 'Досягнення',
+      authorArticlesDesc: 'За опубликованных статей в блоге',
+    },
+  },
+  en: {
+    achievements: {
+      title: 'Achievements',
+      unlocked: 'Unlocked',
+      progress: 'Progress',
+      subtitle: 'You are cooler than {{percentage}}% of specialists!',
+      rank1Unlocked: 'Achievements unlocked rank 1',
+      rank2Unlocked: 'Achievements unlocked rank 2',
+      rank3Unlocked: 'Achievements unlocked rank 3',
+      locked: 'Achievements locked',
+      allAchievements: 'All achievements',
+      platformAchievements: 'Platform achievements',
+      specialistAchievements: 'Specialist achievements',
+      allRanks: 'ALL RANKS',
+      rank1: 'Rank 1',
+      rank2: 'Rank 2',
+      rank3: 'Rank 3',
+      closed: 'Closed',
+    },
+    platformSection: {
+      title: 'Platform Achievements',
+    },
+    specialistSection: {
+      title: 'Specialist Achievements',
+    },
+    achievementCard: {
+      label: 'Achievement',
+    },
+    achievementsData: {
+      documentalistTitle: 'Documentalist',
+      authorArticlesTitle: 'Article Author',
+      introductionTitle: 'Introduction',
+      documentalistDesc: 'Added 30 useful documents.',
+      achievementDesc: 'Achievement',
+      authorArticlesDesc: 'For published articles in the blog',
+    },
+  },
+};
